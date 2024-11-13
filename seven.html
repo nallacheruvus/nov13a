@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>Physics</li>
+      <li>Nuclear Physics</li>
+      <li>Geo Physics</li>
+      <li>Nano Physics</li>
+      <li>Geomorphology</li>
+    </ul>
+    <ol>
+      <li>Physics Dept</li>
+      <li>Nuclear Physics Dept</li>
+      <li>Geo Physics Dept</li>
+      <li>Nano Physics Dept</li>
+      <li>Geomorphology Dept</li>
+    </ol>
+    <table border="1">
+      <tr>
+        <td>Petrology</td>
+      </tr>
+      <tr>
+        <td>Gemology</td>
+      </tr>
+      <tr>
+        <td>Sedimentary Geology</td>
+      </tr>
+    </table>
+    <script>
+      var matches = document.querySelectorAll("ul li");
+      var matchesa = document.querySelectorAll("ol li");
+      var matchesb = document.querySelectorAll("tr td");
+      var j = 0;
+      for (const i of matches) {
+        document.write(i.innerHTML + "<br/>");
+        document.write(matchesa[j].innerHTML + "<hr/><br/><hr/>");
+        document.write(matchesb[j].innerHTML + "<br/>");
+        j++;
+      }
+    </script>
+  </body>
+</html>

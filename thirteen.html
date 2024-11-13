@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+  </head>
+  <body>
+    <script>
+      var par = document.body;
+      var arr = [
+        "Algebra",
+        "Geometric Algebra",
+        "Integrals",
+        "Differentiation",
+        "Linear Algebra",
+      ];
+      var selList = document.createElement("select");
+      selList.style.backgroundColor = "yellow";
+      selList.style.color = "maroon";
+      selList.style.borderStyle = "double";
+      selList.addEventListener("click", (e) => {
+        alert(e.target.value);
+      });
+      selList.id = "mylist";
+      par.appendChild(selList);
+      for (let i = 0; i < arr.length; i++) {
+        var opt = document.createElement("option");
+        opt.value = arr[i];
+        opt.text = arr[i];
+        selList.appendChild(opt);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body>
+    <a href="http://www.google.com" target="_blank" id="mylink">Google</a>
+    <br />
+    <input
+      type="text"
+      style="background-color: gray"
+      id="mytxt"
+      placeholder="this is test text"
+    />
+    <script>
+      var link = document.getElementById("mylink");
+      var hr = link.getAttribute("href");
+      var targ = link.getAttribute("target");
+      var t = document.getElementById("mytxt");
+      var pl = t.getAttribute("placeholder");
+      alert(hr + "  " + targ + "  " + pl);
+    </script>
+  </body>
+</html>

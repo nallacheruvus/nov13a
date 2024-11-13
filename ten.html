@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Before Begin-->
+    <div style="border-width: 2px; border-style: double" id="main">
+      <!--after begin-->
+      <h1 id="title">Title</h1>
+      <p id="hint">A Para</p>
+      <!--before end-->
+    </div>
+    <!--After end-->
+    <script>
+      var md = document.getElementById("main");
+      md.insertAdjacentHTML("beforebegin", "<p>This isin the begining</p>");
+      md.insertAdjacentHTML("afterbegin", "<p>This is after begin</p>");
+      md.insertAdjacentHTML("beforeend", "<div>Before end div</div>");
+      md.insertAdjacentHTML("afterend", "<p>After end</p>");
+    </script>
+  </body>
+</html>

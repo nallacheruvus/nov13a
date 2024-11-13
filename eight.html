@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select title="test">
+      <option>Geosync</option>
+      <option>Protosync</option>
+      <option>Magnetosync</option>
+      <option>Pirosync</option>
+      <option>Tyrosync</option>
+    </select>
+    <ul>
+      <li>Physics</li>
+      <li>Nuclear Physics</li>
+      <li>Geo Physics</li>
+      <li>Nano Physics</li>
+      <li>Geomorphology</li>
+    </ul>
+    <script>
+      var matches = document.querySelectorAll("select option");
+      var matchesa = document.querySelectorAll("ul li");
+      document.write("<ul>");
+      for (const i of matches) {
+        document.write("<li>" + i.innerHTML + "</li>");
+      }
+      document.write("</ul>");
+      document.write("<select>");
+      for (const i of matchesa) {
+        document.write("<option>" + i.innerHTML + "</option>");
+      }
+      document.write("</select>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Before Begin-->
+    <div style="border-width: 2px; border-style: double" id="main">
+      <!--after begin-->
+      <h1 id="title">Title</h1>
+      <p id="hint">A Para</p>
+      <!--before end-->
+    </div>
+    <!--After end-->
+    <script>
+      var pc = document.getElementById("main");
+      var old = document.getElementById("hint");
+      var np = document.createElement("p");
+      var nc = document.createTextNode("Newtons Paragraph");
+      np.appendChild(nc);
+      pc.replaceChild(np, old);
+    </script>
+  </body>
+</html>

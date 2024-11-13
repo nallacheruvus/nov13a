@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>First Para</p>
+    <div>First Division</div>
+    <p>Second Para</p>
+    <div>Second Div</div>
+    <p>Third para</p>
+    <div>Third div</div>
+    <p>Fourth para</p>
+    <div>Fourth div</div>
+    <p>Fifth para</p>
+    <div>Fifth div</div>
+    <script>
+      var matches = document.getElementsByTagName("div");
+      var matchesa = document.getElementsByTagName("p");
+      for (const key in matches) {
+        matches[key].style.color = "yellow";
+        matches[key].style.backgroundColor = "blue";
+        matches[key].innerHTML = "Element " + key;
+        matchesa[key].style.color = "blue";
+        matchesa[key].style.backgroundColor = "yellow";
+        matchesa[key].innerHTML = "Element " + key;
+      }
+    </script>
+  </body>
+</html>

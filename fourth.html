@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="test">This is a test paragraph</p>
+    <div class="block test block">This is a test div</div>
+    <div class="blocked test">This is a testb div</div>
+    <div class="blocks test">This is a testc div</div>
+    <p>This yet another</p>
+    <script>
+      var matches = document.getElementsByClassName("test");
+      document.write("No of matches for the class are " + matches.length);
+      matches[0].style.fontWeight = "bold";
+      matches[matches.length - 1].style.color = "red";
+    </script>
+  </body>
+</html>

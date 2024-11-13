@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a
+      style="background-color: black"
+      href="http://www.google.com"
+      target="_blank"
+      id="mylink"
+      >Google</a
+    >
+    <br />
+    <button id="mybtn">Test Button</button>
+    <script>
+      var btn = document.getElementById("mylink");
+      btn.setAttribute("href", "http://www.rediff.com");
+      btn.setAttribute("style", "background-color:red");
+      var bb = document.getElementById("mybtn");
+      bb.setAttribute("style", "background-color:red");
+    </script>
+  </body>
+</html>

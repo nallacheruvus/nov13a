@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="title">Title</h1>
+      <p id="hint">A Para</p>
+    </div>
+    <script>
+      var nd = document.createElement("div");
+      nd.style.backgroundColor = "blue";
+      nd.style.color = "yellow";
+      var nc = document.createTextNode("Hi there whats up");
+      nd.appendChild(nc);
+      var cd = document.getElementById("main");
+      document.body.appendChild(nd, cd);
+      //   document.body.insertBefore(nd, cd);
+    </script>
+  </body>
+</html>
